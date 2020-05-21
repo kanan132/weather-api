@@ -67,26 +67,13 @@ class CurrentWeather {
             .then(data => {
                 this.render_data_to_dom(data);
                 this.weather_storage(keyword,data);
-                this.getting_features(keyword);
 
                 
             }).catch(err => console.log(err.message));
     }
 
     weather_storage(keyword,data){
-        window.localStorage.setItem(keyword, JSON.stringify(data));
-    }
-
-    getting_features(keyword){
-        
-        let last_searched_city=JSON.parse(localStorage.getItem(keyword));
-        for(let p in last_searched_city ){
-            document.querySelector("#last").innerHTML+=`${last_searched_city[p].name}`;
-        }
-        /*let last_searched_city=localStorage.getItem(keyword).split(",");
-        for(let i=0;i<last_searched_city.length;i++){
-            document.querySelector(".table").innerHTML+="<tr><td>"+ last_searched_city[i].keyword+ "</td><td>" + last_searched_city[i].get_temp+ "</td><td>" + last_searched_city[i].get_weather+"</td></tr>";
-        }*/
+        window.localStorage.setItem(`city_${keyword}`, JSON.stringify(data));
     }
     
 }
