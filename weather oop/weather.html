@@ -12,16 +12,21 @@
     <div class="contain-fluider">
         <div class="row">
             <div class="col-md-12">
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                         
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="navbar-toggler-icon"></span>
-                    </button> <a class="navbar-brand" href="#">Brand</a>
+                    </button> <!--<a class="navbar-brand" href="#">Brand</a>-->
+                    <li class="logo">
+                        <a href="/_">
+                            <img src="https://openweathermap.org/themes/openweathermap/assets/img/logo_white_cropped.png" width="130" height="50">
+                        </a>
+                    </li>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     </div>
                     <div class="col-sm-3 col-md-3">
                         <div class="input-group">
-                            <input type="text" placeholder="Search" id="keyword"><button class="btn btn-default" type="submit" id="submit-button" style="background-color: rgb(159, 230, 230);" >Submit</button>
+                            <input type="text" placeholder="Your city name" id="keyword"><button class="btn btn-default" type="submit" id="submit-button" style="background-color: #f86a47;" >Submit</button>
                         
                             </div>
                         </div>
@@ -30,17 +35,27 @@
                 </nav>
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <img src="https://www.socialinnovationacademy.eu/wp-content/uploads/2018/06/cities.png" width="100%" height="250">
+                <div class="centered">
+                    <h3>We deliver 2 billion forecasts per day</h3>
+                    
+                </div>
+                <div class="right">
+                    <h5 style="left: 55%;">Latest weather condition for each city</h5>
+                </div>
+            </div>
+        </div>
         <div class="row" >
             <div class="col-md-6" id="main">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" id="last">
                 <h3 class="header">Recently searched cities:</h3>
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>
-                                #
-                            </th>
+                           
                             <th>
                                 City
                             </th>
@@ -56,6 +71,87 @@
 
                     </tbody>
                 </table>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="weather-title" >Our New Products</h2>
+            <div class="col-md-4 below">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail First" src="https://openweathermap.org/themes/openweathermap/assets/img/shutterstock_298797602_1.jpg" />
+                    <div class="card-block">
+                        <h5 class="card-title" style="color: #f86a47;">
+                            History Forecast Bulk
+                        </h5>
+                        <p class="card-text">
+                            Historical forecast weather data is available starting from October, 2017. We provide this data in CSV and JSON formats.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary" href="#" style="background-color: #f86a47;">Learn more</a> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 below">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail Second" src="https://openweathermap.org/themes/openweathermap/assets/img/shutterstock_753167914_1.jpg" />
+                    <div class="card-block">
+                        <h5 class="card-title" style="color: #f86a47;">
+                            Hourly Weather Forecast  
+                        </h5>
+                        <p class="card-text">
+                            By using this API you will get detailed forecast data with 96 timestamps for ANY coordinate.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary" href="#" style="background-color: #f86a47;">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 below">
+                <div class="card">
+                    <img class="card-img-top" alt="Bootstrap Thumbnail Third" src="https://openweathermap.org/themes/openweathermap/assets/img/shutterstock_649916179_1.jpg" />
+                    <div class="card-block">
+                        <h5 class="card-title" style="color: #f86a47;">
+                            Statistical Weather Data API
+                        </h5>
+                        <p class="card-text">
+                            This new API will allow you to aggregate historical data by day/month/year. Based on our Historical weather data.
+                        </p>
+                        <p>
+                            <a class="btn btn-primary" href="#" style="background-color: #f86a47;">Learn more</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h2 class="title-agro">
+                    Dashboard and Agro API
+                </h2>
+                <p class="left"> 
+                    We provide satellite imagery, weather data and other agricultural services that are based on geodata. By using <strong style="color: #f86a47;">Agro API</strong>, you can easily power your solution based on this information.
+                    <strong style="color: #f86a47;">Dashboard</strong> is a visual service where you can easy work with satellite imagery and weather data for your fields. It is the real example of what we provide through Agro API.
+                </p>
+                <ul class="list-agro">
+                    <li class="list-item">
+                        New satellite imagery every 2-4 days
+                    </li>
+                    <li class="list-item">
+                        Historical satellite data archive
+                    </li>
+                    <li class="list-item">
+                        NDVI / EVI vegetation indices and Historical NDVI chart
+                    </li>
+                    <li class="list-item">
+                        Current, Forecast and Historical weather data
+                    </li>
+                    
+                </ul>
+                <a class="btn btn-primary agro " href="#" style="background-color: #f86a47;">About Agro API</a>
+            </div>
+            <div class="col-md-4">
+                <img alt="Image Preview" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQUVc776ifgyJY9VPF6JZSfOjTgkfbWnz1KcfFdz5WV6SqA_Fbk&usqp=CAU" width="300px" height="400px" />
             </div>
         </div>
     </div>
