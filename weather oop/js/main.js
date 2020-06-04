@@ -1,4 +1,4 @@
-let url = 'https://api.openweathermap.org/data/2.5/weather';
+let url = 'https://api.openweathermap.org/data/2.5/forecast';
 let api_key = "8df91e2474f634ad5aa46cf685f3b66c";
 
 let weather = new CurrentWeather(url, api_key);
@@ -36,19 +36,21 @@ function load_data() {
 
 
 	let records = get_records();
-
+    console.log(records);
 	let table_data = records.map(record => {
-		return `
+        
+        //console.log(record.data.list[0].main.temp);
+        return `
         <tr class="table-city">
            
             <td class="reuse">
-               ${record.city.split("_")[1]} 
+               ${record.city.split("_")[1]}
             </td>
             <td>
-                ${Math.round(record.data.main.temp - 273.15)}*C
+                ${Math.round(record.data.list[0].main.temp - 273.15)}°C
             </td>
             <td>
-                ${record.data.weather[0].description}
+                ${record.data.list[0].weather[0].description}
             </td>
         
         </tr>`;
@@ -56,6 +58,9 @@ function load_data() {
 	document.getElementById("cities").innerHTML = table_data;
 }
 
+/*document.querySelector("#submit-button").addEventListener('click',()=>{
+    load_data();
+})*/
 window.load = load_data();
 
 function touching_city(){ 
