@@ -110,6 +110,17 @@ h4{
 	right: 20%;
 	top: 40%;
 }
+#icon-day{
+	font-size: 2em;
+
+}
+.daily{
+	float: left;
+}
+
+.row-no-gutter{
+	margin-left: 20px;
+}
 
 
 
@@ -127,10 +138,7 @@ body {
 	font-weight: 200;
 }
 
-.row-no-gutter {
-	margin-right: 0;
-	margin-left: 0;
-}
+
 
 .row-no-gutter [class*="col-"] {
 	padding-right: 0;
