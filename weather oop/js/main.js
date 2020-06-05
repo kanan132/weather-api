@@ -36,10 +36,9 @@ function load_data() {
 
 
 	let records = get_records();
-    console.log(records);
+    
 	let table_data = records.map(record => {
         
-        //console.log(record.data.list[0].main.temp);
         return `
         <tr class="table-city">
            
