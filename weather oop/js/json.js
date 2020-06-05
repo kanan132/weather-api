@@ -15,13 +15,13 @@ class CurrentWeather {
 							<div class="col-md-12">
 								<ul class="nav nav-tabs">
 									<li class="nav-item">
-										<a class="nav-link active show" href="#tab1" data-toggle="tab">Today</a>
+										<a class="nav-link active show" href="#tab1" data-toggle="tab" style="color: #f86a47">Now</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#tab2" data-toggle="tab">Tomorrow</a>
+										<a class="nav-link" href="#tab2" data-toggle="tab" style="color: #f86a47">Tomorrow</a>
 									</li>
 									<li class="nav-item">
-										<a class="nav-link" href="#tab3" data-toggle="tab">After tomorrow</a>
+										<a class="nav-link" href="#tab3" data-toggle="tab" style="color: #f86a47">Day after tomorrow</a>
 									</li>
 								</ul>
 								<br/>
@@ -34,9 +34,9 @@ class CurrentWeather {
 							
 												<div class="info">
 													<div class="city"><span></span> ${data.city.name}</div>
-													<div class="night">${timestamp_to_date(data.list[1].dt)}</div>
+													<div class="night">${timestamp_to_date(data.list[0].dt)}</div>
 							
-													<div class="temp">${Math.round(data.list[1].main.temp - 273.15)}°C</div>
+													<div class="temp">${Math.round(data.list[0].main.temp - 273.15)}°C</div>
 							
 													<div class="wind">
 														<svg version="1.1" id="wind" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -72,7 +72,7 @@ class CurrentWeather {
 															</g>
 														</g>
 							
-														<span>${data.list[1].wind.speed} km/h</span>
+														<span>${data.list[0].wind.speed} km/h</span>
 													</div>
 												</div>
 							
