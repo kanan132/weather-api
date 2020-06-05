@@ -85,6 +85,33 @@ class CurrentWeather {
 											<figure style="background-image: url(http://136.243.1.253/~creolitic/bootsnipp/home.jpg)"></figure>
 										</div>
 										</div>
+
+										
+											<div class="col-md-12">
+												<div id="card-510580">
+													<div class="card">
+														<div class="card-header">
+															<a class="card-link collapsed" data-toggle="collapse" data-parent="#card-510580" href="#more-now" style="color: #f86a47 ">More information</a>
+														</div>
+														<div id="more-now" class="collapse">
+															<div class="card-body">
+																<p><h4 style="color: #f86a47 ">Coordinates:</h4> 
+																	lat: ${data.city.coord.lat}
+																	<br/>
+																	lon: ${data.city.coord.lon}
+																</p>
+																<p><h4 style="color: #f86a47 ">Humidity:</h4> 
+																	 ${data.list[0].main.humidity}%
+																</p>
+																<p><h4 style="color: #f86a47 ">Pressure:</h4> 
+																	 ${data.list[0].main.pressure} Pa
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										
 										</p>
 									</div>
 									<div class="tab-pane" id="tab2">
@@ -146,6 +173,31 @@ class CurrentWeather {
 											<figure style="background-image: url(http://136.243.1.253/~creolitic/bootsnipp/home.jpg)"></figure>
 										</div>
 										</div>
+
+										<div class="col-md-12">
+												<div id="card-510580">
+													<div class="card">
+														<div class="card-header">
+															<a class="card-link collapsed" data-toggle="collapse" data-parent="#card-510580" href="#more-now" style="color: #f86a47 ">More information</a>
+														</div>
+														<div id="more-now" class="collapse">
+															<div class="card-body">
+																<p><h4 style="color: #f86a47 ">Coordinates:</h4> 
+																	lat: ${data.city.coord.lat}
+																	<br/>
+																	lon: ${data.city.coord.lon}
+																</p>
+																<p><h4 style="color: #f86a47 ">Humidity:</h4> 
+																	 ${data.list[8].main.humidity}%
+																</p>
+																<p><h4 style="color: #f86a47 ">Pressure:</h4> 
+																	 ${data.list[8].main.pressure} Pa
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</p>
 									</div>
 									<div class="tab-pane" id="tab3">
@@ -207,6 +259,31 @@ class CurrentWeather {
 											<figure style="background-image: url(http://136.243.1.253/~creolitic/bootsnipp/home.jpg)"></figure>
 										</div>
 										</div>
+
+										<div class="col-md-12">
+												<div id="card-510580">
+													<div class="card">
+														<div class="card-header">
+															<a class="card-link collapsed" data-toggle="collapse" data-parent="#card-510580" href="#more-now" style="color: #f86a47 ">More information</a>
+														</div>
+														<div id="more-now" class="collapse">
+															<div class="card-body">
+																<p><h4 style="color: #f86a47 ">Coordinates:</h4> 
+																	lat: ${data.city.coord.lat}
+																	<br/>
+																	lon: ${data.city.coord.lon}
+																</p>
+																<p><h4 style="color: #f86a47 ">Humidity:</h4> 
+																	 ${data.list[16].main.humidity}%
+																</p>
+																<p><h4 style="color: #f86a47 ">Pressure:</h4> 
+																	 ${data.list[16].main.pressure} Pa
+																</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 										</p>
 									</div>
 								</div>

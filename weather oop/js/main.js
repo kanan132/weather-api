@@ -57,10 +57,10 @@ function load_data() {
 	document.getElementById("cities").innerHTML = table_data;
 }
 
-/*document.querySelector("#submit-button").addEventListener('click',()=>{
+document.querySelector("#submit-button").addEventListener('click',()=>{
     load_data();
-})*/
-window.load = load_data();
+})
+//window.load = load_data();
 
 function touching_city(){ 
     document.querySelector(".reuse").addEventListener('click',(e) => {
